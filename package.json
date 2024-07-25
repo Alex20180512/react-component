@@ -1,0 +1,39 @@
+{
+  "name": "ux-component",
+  "version": "0.0.1",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "build": "npm run format && tsc && vite build",
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "dev": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.6",
+    "@storybook/addon-interactions": "^8.2.6",
+    "@storybook/addon-links": "^8.2.6",
+    "@storybook/addon-onboarding": "^8.2.6",
+    "@storybook/blocks": "^8.2.6",
+    "@storybook/react": "^8.2.6",
+    "@storybook/react-vite": "^8.2.6",
+    "@storybook/test": "^8.2.6",
+    "@types/react": "^18.3.3",
+    "prettier": "^3.3.3",
+    "storybook": "^8.2.6",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "4.0.0-beta.1"
+  }
+}
