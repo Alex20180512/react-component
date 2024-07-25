@@ -1,1 +1,1 @@
-export * from "./streamer-border";
+export * from "./border";
